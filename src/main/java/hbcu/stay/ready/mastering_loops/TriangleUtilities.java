@@ -3,18 +3,53 @@ package hbcu.stay.ready.mastering_loops;
 public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
-        return null;
+        String getTriangle= "";
+        String newLine= "\n";
+        for(int i =1; i < numberOfRows; i++){
+        for(int a = 1; a <= i; a++ ){
+             getTriangle += "*";
+        }
+        getTriangle+= newLine ;
+    }
+        return getTriangle;
+    
     }
 
-    public static String getRow(int numberOfStars) {
-        return null;
+    public static String getRow(int numberOfStars){
+        String getRow= "";
+        String star= "";
+        for(int i = 0; i< numberOfStars; i++ ){    
+            star="*";
+            getRow+= star;
+        }
+        return getRow;
     }
 
     public static String getSmallTriangle() {
-        return null;
+        String getTriangle= "";
+        String newLine= "\n";
+        for(int i = 1; i < 5 ; i++){
+        for(int a = 1; a <= i; a++ ){
+             getTriangle += "*";
+        }
+        getTriangle+= newLine ;
     }
+        return getTriangle;
+    
+    }
+   
 
     public static String getLargeTriangle() {
-        return null;
+        String getTriangle= "";
+        String newLine= "\n";
+        for(int i = 1; i <= 9 ; i++){
+        for(int a = 1; a <= i; a++ ){
+             getTriangle += "*";
+        }
+        getTriangle+= newLine ;
     }
+        return getTriangle;
+    
+    }
+    
 }
